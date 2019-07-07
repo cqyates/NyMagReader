@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Scraping With Mongoose</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+</head>
+
+<body>
     <div id="wrapper">
-      <h1>Project Scrape</h1>
-      <h2><i>Scraping the EHOW Website for things you can do!</i></h2>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-1">
-              <div>
-                  <img src="assets/images/nymag.png">
-              </div>
-            <a href="/scrape"><button class="btn btn-primary">Click to Scrape</button></a>
-          </div>
+        <h1>New York Magazine Reader</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                    <div>
+                        <a href="/scrape">
+                            <img src="assets/images/nymag.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div id="articles"></div>
+                </div>
+                <div class="col-4">
+                    <div id="notes"></div>
+                </div>
+            </div>
         </div>
-          <div class="row">
-            <div class="col-8">
-              <div id="articles"></div>
-            </div>
-            <div class="col-4">
-              <div id="notes"></div>
-            </div>
-          </div>
-      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/assets/app.js"></script>
-  </body>
+</body>
+
 </html>
