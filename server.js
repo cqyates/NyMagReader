@@ -87,6 +87,7 @@ app.get("/scrape", function (req, response) {
             response.send(error.message)
         }
     })
+    response.redirect("/")
 })
 
 app.get("/articles", function(req, res) {
