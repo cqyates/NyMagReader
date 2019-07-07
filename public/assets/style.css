@@ -1,0 +1,7 @@
+img {
+    width: 400px;
+    height: auto;
+    box-shadow: 5px 10px 10px #888888;
+    text-align: center;
+    margin: 10px;
+}
