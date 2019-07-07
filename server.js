@@ -63,28 +63,6 @@ app.get("/scrape", function (req, response) {
             //Create a new Article using the `result` object built from scraping
         });
 
-        // db.Article.find({}).then(function (dbData) {
-        //     const newArticles = results.filter(article => {
-        //         for (var i = 0; i < dbData.length; i++) {
-        //             if (dbData[i].link === article.link) {
-        //                 return false
-        //             }
-        //         }
-        //         return true
-        //     })
-        //     db.Article.create(newArticles)
-        //         .then(function (dbArticle) {
-        //             // View the added result in the console
-        //             console.log(dbArticle);
-        //             // Send a message to the client
-        //             response.send("No Error");
-        //         })
-        //         .catch(function (err) {
-        //             // If an error occurred, log it
-        //             console.log(err);
-        //             response.send("There be ERROR")
-        //         });
-        // })
 
         const dbData = await db.Article.find({})
         const newArticles = await results.filter(article => {
