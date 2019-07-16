@@ -72,7 +72,9 @@ app.get("/scrape", function (req, response) {
                 }
             }
             return true
+           
         })
+        console.log(newArticles)
 
         try {
             if(!newArticles){
