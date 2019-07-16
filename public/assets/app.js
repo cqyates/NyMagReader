@@ -6,9 +6,8 @@ $.getJSON("/articles", function(data) {
     $("#articles").prepend(
       "<p data-id='" + data[i]._id + "'>" + 
       data[i].title + 
-      "<img src=" + data[i].img +" style='width:250px'>" +
       "<br />" + "<a href=" + data[i].link +">" + 
-      data[i].link + "</a></p>");
+      data[i].link + "</a>" + "<br><img src=" + data[i].img +" style='width:250px'>" + "</p>");
   }
 });
 
