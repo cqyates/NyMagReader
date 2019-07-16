@@ -11,6 +11,10 @@ const PORT = process.env.PORT || 3000
 
 const app = express();
 
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 // Configure middleware
 // Use morgan logger for logging requests
 app.use(logger("dev"));
@@ -21,7 +25,7 @@ app.use(express.json());
 // Make public a static folder
 app.use(express.static("public"));
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/projectscrape";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://cqyates:1password@ds149616.mlab.com:49616/heroku_th5sbtcs";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
 
