@@ -7,7 +7,7 @@ $.getJSON("/articles", function(data) {
       "<p data-id='" + data[i]._id + "'>" + "<img class='thumbnail' src=" + data[i].img +">" +
       data[i].title + 
       "<br><a href=" + data[i].link +">" + 
-      data[i].link + "</a></p>");
+      data[i].link + "</a>" + data[i}.summary + "</p>");
   }
 });
 
